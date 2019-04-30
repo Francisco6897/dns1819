@@ -1,0 +1,19 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	practicadaw.net. root.localhost. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	practicadaw.net.
+@	IN	MX	mail.practicadaw.net
+
+234	IN	PTR	practicadaw.net.
+236	IN	PTR	mail.practicadaw.net
+235	IN	PTR	pc2.practicadaw.net
+235 	IN	PTR	ftp.practicadaw.net
+
